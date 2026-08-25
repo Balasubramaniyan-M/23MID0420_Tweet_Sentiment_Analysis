@@ -135,13 +135,6 @@ python -c "import nltk; nltk.download('vader_lexicon')"
 - No individual user profiling, tracking, or discriminatory use is intended or supported
 - Private user information (handles, coordinates, locations) is excluded from modeling
 
-## Academic Integrity & AI-Assistance Disclosure
-
-This project was developed as part of the MDI3003 course. AI-assisted tools (Large Language Models) were used for:
-- Code scaffolding and boilerplate generation
-- Documentation drafting
-
-All experimental results are genuine outputs from executed code. No metrics, confusion matrices, error analyses, or observations have been fabricated. The student has verified, interpreted, and takes responsibility for all submitted work.
 
 ---
 
