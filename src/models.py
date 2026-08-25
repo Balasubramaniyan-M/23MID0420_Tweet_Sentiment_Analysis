@@ -71,7 +71,6 @@ def create_tfidf_lr_pipeline(
             max_iter=max_iter,
             random_state=SEED,
             solver="lbfgs",
-            multi_class="multinomial",
             class_weight="balanced",
             n_jobs=-1,
         )),
@@ -202,10 +201,10 @@ def run_cross_validation(
     
     scoring = {
         "accuracy": "accuracy",
-        "macro_f1": make_scorer(f1_score, average="macro", zero_division=0),
-        "weighted_f1": make_scorer(f1_score, average="weighted", zero_division=0),
-        "macro_precision": make_scorer(precision_score, average="macro", zero_division=0),
-        "macro_recall": make_scorer(recall_score, average="macro", zero_division=0),
+        "macro_f1": "f1_macro",
+        "weighted_f1": "f1_weighted",
+        "macro_precision": "precision_macro",
+        "macro_recall": "recall_macro",
     }
     
     results = []

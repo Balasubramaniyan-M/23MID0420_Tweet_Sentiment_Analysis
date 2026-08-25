@@ -1,0 +1,272 @@
+{
+  "dataset_name": "Twitter US Airline Sentiment",
+  "source": "CrowdFlower / Kaggle",
+  "url": "https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment",
+  "access_date": "2026-08-24",
+  "license": "CC BY-NC-SA 4.0 (CrowdFlower open data)",
+  "n_rows": 14640,
+  "n_columns": 15,
+  "columns": [
+    "tweet_id",
+    "airline_sentiment",
+    "airline_sentiment_confidence",
+    "negativereason",
+    "negativereason_confidence",
+    "airline",
+    "airline_sentiment_gold",
+    "name",
+    "negativereason_gold",
+    "retweet_count",
+    "text",
+    "tweet_coord",
+    "tweet_created",
+    "tweet_location",
+    "user_timezone"
+  ],
+  "target_column": "airline_sentiment",
+  "text_column": "text",
+  "entity_column": "airline",
+  "sentiment_classes": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "class_distribution": {
+    "negative": 9178,
+    "neutral": 3099,
+    "positive": 2363
+  },
+  "class_percentages": {
+    "negative": 62.69,
+    "neutral": 21.17,
+    "positive": 16.14
+  },
+  "entity_list": [
+    "American",
+    "Delta",
+    "Southwest",
+    "US Airways",
+    "United",
+    "Virgin America"
+  ],
+  "language": "English (Twitter/social media)",
+  "domain": "US airline customer tweets",
+  "collection_period": "February 2015",
+  "annotation_method": "CrowdFlower human annotators",
+  "duplicates": {
+    "duplicate_tweet_ids": 155,
+    "duplicate_text": 213,
+    "duplicate_text_pct": 1.45,
+    "top_duplicate_texts": {
+      "@united thanks": 6,
+      "@SouthwestAir sent": 5,
+      "@AmericanAir thanks": 5,
+      "@JetBlue thanks!": 5,
+      "@AmericanAir thank you!": 4
+    }
+  },
+  "missing_values": {
+    "tweet_id": 0,
+    "airline_sentiment": 0,
+    "airline_sentiment_confidence": 0,
+    "negativereason": 5462,
+    "negativereason_confidence": 4118,
+    "airline": 0,
+    "airline_sentiment_gold": 14600,
+    "name": 0,
+    "negativereason_gold": 14608,
+    "retweet_count": 0,
+    "text": 0,
+    "tweet_coord": 13621,
+    "tweet_created": 0,
+    "tweet_location": 4733,
+    "user_timezone": 4820
+  },
+  "schema": {
+    "n_rows": 14640,
+    "n_columns": 15,
+    "columns": {
+      "tweet_id": {
+        "dtype": "int64",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 14485,
+        "sample_values": [
+          570306133677760513,
+          570301130888122368,
+          570301083672813571
+        ],
+        "role": "identifier"
+      },
+      "airline_sentiment": {
+        "dtype": "object",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3,
+        "sample_values": [
+          "neutral",
+          "positive",
+          "neutral"
+        ],
+        "role": "target"
+      },
+      "airline_sentiment_confidence": {
+        "dtype": "float64",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 1023,
+        "sample_values": [
+          1.0,
+          0.3486,
+          0.6837
+        ],
+        "role": "leakage_risk"
+      },
+      "negativereason": {
+        "dtype": "object",
+        "null_count": 5462,
+        "null_pct": 37.31,
+        "n_unique": 10,
+        "sample_values": [
+          "Bad Flight",
+          "Can't Tell",
+          "Can't Tell"
+        ],
+        "role": "leakage_risk"
+      },
+      "negativereason_confidence": {
+        "dtype": "float64",
+        "null_count": 4118,
+        "null_pct": 28.13,
+        "n_unique": 1410,
+        "sample_values": [
+          0.0,
+          0.7033,
+          1.0
+        ],
+        "role": "leakage_risk"
+      },
+      "airline": {
+        "dtype": "object",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 6,
+        "sample_values": [
+          "Virgin America",
+          "Virgin America",
+          "Virgin America"
+        ],
+        "role": "entity"
+      },
+      "airline_sentiment_gold": {
+        "dtype": "object",
+        "null_count": 14600,
+        "null_pct": 99.73,
+        "n_unique": 3,
+        "sample_values": [
+          "negative",
+          "negative",
+          "neutral"
+        ],
+        "role": "leakage_risk"
+      },
+      "name": {
+        "dtype": "object",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 7701,
+        "sample_values": [
+          "cairdin",
+          "jnardino",
+          "yvonnalynn"
+        ],
+        "role": "privacy_sensitive"
+      },
+      "negativereason_gold": {
+        "dtype": "object",
+        "null_count": 14608,
+        "null_pct": 99.78,
+        "n_unique": 13,
+        "sample_values": [
+          "Late Flight\nFlight Attendant Complaints",
+          "Late Flight\nLost Luggage",
+          "Late Flight"
+        ],
+        "role": "leakage_risk"
+      },
+      "retweet_count": {
+        "dtype": "int64",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 18,
+        "sample_values": [
+          0,
+          0,
+          0
+        ],
+        "role": "privacy_sensitive"
+      },
+      "text": {
+        "dtype": "object",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 14427,
+        "sample_values": [
+          "@VirginAmerica What @dhepburn said.",
+          "@VirginAmerica plus you've added commercials to the experience... tacky.",
+          "@VirginAmerica I didn't today... Must mean I need to take another trip!"
+        ],
+        "role": "text_input"
+      },
+      "tweet_coord": {
+        "dtype": "object",
+        "null_count": 13621,
+        "null_pct": 93.04,
+        "n_unique": 832,
+        "sample_values": [
+          "[40.74804263, -73.99295302]",
+          "[42.361016, -71.02000488]",
+          "[33.94540417, -118.4062472]"
+        ],
+        "role": "privacy_sensitive"
+      },
+      "tweet_created": {
+        "dtype": "object",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 14247,
+        "sample_values": [
+          "2015-02-24 11:35:52 -0800",
+          "2015-02-24 11:15:59 -0800",
+          "2015-02-24 11:15:48 -0800"
+        ],
+        "role": "metadata"
+      },
+      "tweet_location": {
+        "dtype": "object",
+        "null_count": 4733,
+        "null_pct": 32.33,
+        "n_unique": 3081,
+        "sample_values": [
+          "Lets Play",
+          "San Francisco CA",
+          "Los Angeles"
+        ],
+        "role": "privacy_sensitive"
+      },
+      "user_timezone": {
+        "dtype": "object",
+        "null_count": 4820,
+        "null_pct": 32.92,
+        "n_unique": 85,
+        "sample_values": [
+          "Eastern Time (US & Canada)",
+          "Pacific Time (US & Canada)",
+          "Central Time (US & Canada)"
+        ],
+        "role": "privacy_sensitive"
+      }
+    }
+  },
+  "file_hash_md5": "2fa808ea99b32814ccd64d7097d935f2"
+}

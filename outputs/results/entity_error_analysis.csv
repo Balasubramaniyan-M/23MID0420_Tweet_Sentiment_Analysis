@@ -1,0 +1,7 @@
+entity,n_total,n_errors,error_rate,top_error_types
+American,535,95,0.1776,"{'negative→neutral': 44, 'negative→positive': 16, 'neutral→negative': 11}"
+Delta,456,99,0.2171,"{'positive→neutral': 21, 'negative→neutral': 21, 'neutral→negative': 20}"
+Southwest,506,121,0.2391,"{'negative→neutral': 40, 'neutral→negative': 27, 'positive→neutral': 26}"
+US Airways,565,100,0.177,"{'negative→neutral': 48, 'neutral→negative': 23, 'negative→positive': 11}"
+United,774,166,0.2145,"{'negative→neutral': 69, 'neutral→negative': 38, 'positive→negative': 19}"
+Virgin America,92,32,0.3478,"{'positive→neutral': 8, 'negative→neutral': 8, 'neutral→positive': 7}"

@@ -1,0 +1,2 @@
+model_name,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1,inference_time_seconds,throughput_tweets_per_second
+LogisticRegression,0.7906420765027322,0.7398041115776035,0.751718224329429,0.7431814667335503,0.7951268523920232,0.4331,6760.9
