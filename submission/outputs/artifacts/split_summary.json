@@ -1,0 +1,24 @@
+{
+  "seed": 42,
+  "strategy": "stratified",
+  "test_size": 0.2,
+  "val_size": 0.1,
+  "train_count": 10248,
+  "val_count": 1464,
+  "test_count": 2928,
+  "train_distribution": {
+    "negative": 6425,
+    "neutral": 2169,
+    "positive": 1654
+  },
+  "val_distribution": {
+    "negative": 918,
+    "neutral": 310,
+    "positive": 236
+  },
+  "test_distribution": {
+    "negative": 1835,
+    "neutral": 620,
+    "positive": 473
+  }
+}

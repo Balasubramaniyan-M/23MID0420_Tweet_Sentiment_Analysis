@@ -1,0 +1,11 @@
+index,text_anonymized,actual_sentiment,predicted_sentiment,error_type,max_confidence,prob_negative,prob_neutral,prob_positive,entity,error_category,linguistic_notes
+497,<USER> sprinted from C concourse to E and just made it. Coughed up a lung in the process but am now in CLT! Tnx!,neutral,positive,neutral → positive,0.4378,0.3049,0.2573,0.4378,United,mixed_sentiment,2 exclamation marks; 1 mentions
+620,"<USER> Seriously, what is your solution? Who exactly will help my 5 year old if there's a problem with the plane? <URL>",negative,neutral,negative → neutral,0.5159,0.435,0.5159,0.049,Delta,general_ambiguity,contains question; 1 mentions
+813,<USER> I hope so because I fly very often and would hate to change airlines.,neutral,positive,neutral → positive,0.3932,0.358,0.2487,0.3932,Delta,general_ambiguity,1 mentions
+898,<USER> I have two tight connections in #Charlotte and #Frankfurt,negative,neutral,negative → neutral,0.4418,0.415,0.4418,0.1432,US Airways,hashtag_heavy,1 mentions; 2 hashtags
+899,<USER> holy high speed internet batman!  Speeds at United Club at IAD are insanely fast!  Thanks,positive,neutral,positive → neutral,0.4563,0.1135,0.4563,0.4302,United,general_ambiguity,2 exclamation marks; 1 mentions
+1141,<USER> I have been on hold for over 28 minutes  please help <URL>,neutral,negative,neutral → negative,0.8646,0.8646,0.1102,0.0252,Southwest,general_ambiguity,1 mentions
+1441,<USER> Toby hates you lol,negative,neutral,negative → neutral,0.6062,0.1822,0.6062,0.2117,American,slang_abbreviation,1 mentions
+1828,"<USER> thank you for Cancelled Flighting my flight, last minute of course, to #GIS2015. I'm now missing one full day of my trip thanks to this!",negative,positive,negative → positive,0.7475,0.1764,0.0761,0.7475,Southwest,long_complex,1 mentions; 1 hashtags
+1941,<USER> that's it?!?!?,negative,neutral,negative → neutral,0.3471,0.3059,0.3471,0.347,US Airways,very_short,2 exclamation marks; contains question; 1 mentions; very short tweet
+2905,<USER> thank you,neutral,positive,neutral → positive,0.9609,0.0005,0.0387,0.9609,American,very_short,1 mentions; very short tweet

@@ -1,0 +1,106 @@
+{
+  "environment": {
+    "python_version": "3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "numpy_version": "2.2.6",
+    "pandas_version": "2.3.3",
+    "sklearn_version": "1.7.2",
+    "matplotlib_version": "3.10.8",
+    "seaborn_version": "0.13.2",
+    "nltk_version": "3.10.3",
+    "seed": "42",
+    "timestamp": "2026-08-25T12:28:48.830167"
+  },
+  "dataset": {
+    "name": "Twitter US Airline Sentiment",
+    "source": "https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment",
+    "n_rows": 14640,
+    "n_columns": 18
+  },
+  "split": {
+    "seed": 42,
+    "strategy": "stratified",
+    "test_size": 0.2,
+    "val_size": 0.1,
+    "train_count": 10248,
+    "val_count": 1464,
+    "test_count": 2928
+  },
+  "cv_summary": [
+    {
+      "model": "LogisticRegression",
+      "cv_folds": 5,
+      "mean_accuracy": 0.7957654266046035,
+      "std_accuracy": 0.007915980899941787,
+      "mean_macro_f1": 0.7466928414966719,
+      "std_macro_f1": 0.009585920822121504,
+      "mean_weighted_f1": 0.7983251377294562,
+      "std_weighted_f1": 0.00764147532265256,
+      "mean_macro_precision": 0.7403307144046398,
+      "std_macro_precision": 0.008364928321932268,
+      "mean_macro_recall": 0.7545748219502861,
+      "std_macro_recall": 0.011089281527337319,
+      "total_cv_time_seconds": 18.46
+    },
+    {
+      "model": "LinearSVC",
+      "cv_folds": 5,
+      "mean_accuracy": 0.8045592135740197,
+      "std_accuracy": 0.007730689505670464,
+      "mean_macro_f1": 0.7361424143933071,
+      "std_macro_f1": 0.01231922074543564,
+      "mean_weighted_f1": 0.7953611216588865,
+      "std_weighted_f1": 0.008494578400093466,
+      "mean_macro_precision": 0.7763638467517794,
+      "std_macro_precision": 0.011576719644109761,
+      "mean_macro_recall": 0.7101464162329832,
+      "std_macro_recall": 0.013553491792203791,
+      "total_cv_time_seconds": 7.51
+    },
+    {
+      "model": "MultinomialNB",
+      "cv_folds": 5,
+      "mean_accuracy": 0.6949286225335347,
+      "std_accuracy": 0.003956007413569991,
+      "mean_macro_f1": 0.4828766982980525,
+      "std_macro_f1": 0.010717760216074627,
+      "mean_weighted_f1": 0.6222926828133567,
+      "std_weighted_f1": 0.006422910527809181,
+      "mean_macro_precision": 0.8012660444225588,
+      "std_macro_precision": 0.015885093104471875,
+      "mean_macro_recall": 0.4637591231636202,
+      "std_macro_recall": 0.007462904707399382,
+      "total_cv_time_seconds": 4.38
+    }
+  ],
+  "model_selection": {
+    "selected_model": "LogisticRegression",
+    "selection_metric": "mean_macro_f1",
+    "selected_value": 0.7467,
+    "selected_std": 0.0096,
+    "ranking": [
+      {
+        "model": "LogisticRegression",
+        "mean_macro_f1": 0.7466928414966719,
+        "std_macro_f1": 0.009585920822121504
+      },
+      {
+        "model": "LinearSVC",
+        "mean_macro_f1": 0.7361424143933071,
+        "std_macro_f1": 0.01231922074543564
+      },
+      {
+        "model": "MultinomialNB",
+        "mean_macro_f1": 0.4828766982980525,
+        "std_macro_f1": 0.010717760216074627
+      }
+    ],
+    "justification": "LogisticRegression was selected because it achieved the highest mean macro F1 (0.7467 ± 0.0096) in 5-fold stratified cross-validation on training data only. The final test set was not used for model selection."
+  },
+  "test_results": {
+    "model": "LogisticRegression",
+    "accuracy": 0.7906420765027322,
+    "macro_f1": 0.7431814667335503,
+    "weighted_f1": 0.7951268523920232
+  }
+}
